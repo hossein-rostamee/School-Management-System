@@ -1,0 +1,75 @@
+from .models import Volunteer, Student
+from rest_framework import serializers
+
+class VolunteerSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Volunteer
+        fields = (
+             'id'
+            ,'fullName'                               
+            ,'fatherName'                              
+            ,'birthCity'                               
+            ,'schoolName'                              
+            ,'classNumber'                             
+            ,'birthDate'                               
+            ,'nationalCode'                            
+            ,'fatherPhoneNumber'                       
+            ,'motherPhoneNumber'                       
+            ,'schoolShift'                             
+            ,'religion'                                
+            ,'grade'                                   
+            ,'whatIsParentsGrade'                      
+            ,'howDidGetToKnowQuranSessions'            
+            ,'WhoEncourageYouToComeQuranSessions'      
+            ,'WhichSessionDidYouParticipate'           
+            ,'WhichSportsDoYouInterestedIn'            
+            ,'WhichBooksDoYouRecentlyRead'             
+            ,'WriteTheNamesOfYourTwoFriends'           
+            ,'WhichCulturalActivitiesDoYouInterested'  
+            ,'WhichFieldsDoYouTalentedIn'              
+            ,'HowMuchDoYouFamiliarWithQuran'           
+            ,'WhichCommitionsDoYouInterestedIn'        
+            ,'HowDoYouSpendYourHolidays'  
+            ,'WhichBooksDoYouLikeToRead'   
+            ,'WhatLevelofSkillDoYouHaveInCulturalActivity' 
+            ,'date'         
+        )
+
+class StudentSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Student
+        fields = (
+             'id'
+            ,'fullName'                                
+            ,'fatherName'                              
+            ,'birthCity'                               
+            ,'schoolName'                              
+            ,'classNumber'                             
+            ,'birthDate'                               
+            ,'nationalCode'                            
+            ,'fatherPhoneNumber'                       
+            ,'motherPhoneNumber'                       
+            ,'schoolShift'                             
+            ,'religion'                                
+            ,'grade'                                   
+            ,'personelPhoto'                           
+            ,'birthCertificate'                        
+            ,'passField'                               
+            ,'whatIsParentsGrade'                      
+            ,'howDidGetToKnowQuranSessions'            
+            ,'WhoEncourageYouToComeQuranSessions'      
+            ,'WhichSessionDidYouParticipate'           
+            ,'WhichSportsDoYouInterestedIn'            
+            ,'WhichBooksDoYouRecentlyRead'             
+            ,'WriteTheNamesOfYourTwoFriends'           
+            ,'WhichCulturalActivitiesDoYouInterested'  
+            ,'WhichFieldsDoYouTalentedIn'              
+            ,'HowMuchDoYouFamiliarWithQuran'           
+            ,'WhichCommitionsDoYouInterestedIn'        
+            ,'HowDoYouSpendYourHolidays' 
+            ,'WhichBooksDoYouLikeToRead'    
+            ,'WhatLevelofSkillDoYouHaveInCulturalActivity'            
+            ,'user'                                    
+            ,'classitem'        
+            ,'date'                                                             
+        )
